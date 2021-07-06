@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 41em;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+#main-container{
+    background-color:#3a3d42;
+    padding: 1em 2em 2em 2em;
+    color: white;
+}
+
+.color-option{
+    margin-bottom: 1.5em;
+}
+
+.box {
+    height: 4em;
+    width: 100%;
+}
+
+#altered-color {
+    background-color:#ffffff;
+}
+
+#input-color{
+    background-color: #ffffff;
+}
+
+#color-hex {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+.toggle {
+    display: flex;
+}
+
+.toggle-button{
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: darkgray;
+    margin: 0em 1em 0em 1em;
+}
+
+.toggle-text{
+    align-self: center;
+}
+
+.inner-circle {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+    background-color: white;
+    transition: all 250ms;
+}
+
+.toggle-button.toggled > .inner-circle {
+    transform: translateX(25px);
+    background-color: #333;
+}
+
+.unselected {
+    opacity: 0.25;
+}
+
+#hexError{
+    display:none;
+    color: red;
+    font-size: 15px;
+    margin-left: 0.5em;
+}
